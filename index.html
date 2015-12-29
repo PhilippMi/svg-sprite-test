@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+	.container {
+		width: 100px;
+	}
+</style>
+</head>
+<body>
+<h3>Normal SVG inclusion</h3>
+<div class="container">
+  <img src="sprite.svg" />
+</div>
+<h3>Circle definition</h3>
+<div class="container">
+  <svg viewBox="0 0 100 100">
+  	<use xlink:href="sprite.svg#my-circle"></use>
+  </svg>
+</div>
+<h3>Rectangle definition</h3>
+<div class="container">
+  <svg viewBox="0 0 100 100">
+  	<use xlink:href="sprite.svg#my-rectangle"></use>
+  </svg>
+</div>
+</body>
+</html>
